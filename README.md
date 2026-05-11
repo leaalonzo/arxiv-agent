@@ -13,7 +13,7 @@ Every morning at 7am, the agent:
 1. Hits the ArXiv API and pulls the latest papers on LLMs in financial markets, machine learning in asset pricing, and algorithmic trading
 2. Summarises each abstract into plain English using Groq's LLM API
 3. Writes the digest to a log file
-4. Serves it on a Flask dashboard at http://<your-pi-ip>:5000
+4. Serves it on a Flask dashboard at http://YOUR-PI-IP:5000
 
 ---
 
@@ -55,7 +55,7 @@ python agent.py
 
 ### 5. Open the dashboard
 
-Navigate to http://localhost:5000 on the Pi, or http://<your-pi-ip>:5000 from any device on the same network. Find your Pi's IP by running: hostname -I
+Navigate to http://localhost:5000 on the Pi, or http://YOUR-PI-IP:5000 from any device on the same network. Find your Pi's IP by running: hostname -I
 
 ### 6. Automate with cron
 
