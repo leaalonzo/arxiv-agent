@@ -1,6 +1,6 @@
 # arxiv-agent
 
-A local AI agent that runs on a Raspberry Pi, fetches the latest research papers from ArXiv every morning, summarises them with an LLM, and serves a digest on a dashboard accessible from any device on your home network.
+Here, I built a local AI agent that runs on a Raspberry Pi, fetches the latest research papers from ArXiv every morning, summarises them with an LLM, and serves a digest on a dashboard accessible from any device on your home network.
 
 This is built as a side project to learn edge AI and agentic frameworks. Full writeup is on [Substack](https://gleanai.substack.com).
 
