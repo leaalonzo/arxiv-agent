@@ -2,7 +2,7 @@
 
 A local AI agent that runs on a Raspberry Pi, fetches the latest research papers from ArXiv every morning, summarises them with an LLM, and serves a digest on a dashboard accessible from any device on your home network.
 
-Built as a side project to learn edge AI and agentic frameworks. Full writeup on [Substack](https://gleanai.substack.com).
+This is built as a side project to learn edge AI and agentic frameworks. Full writeup is on [Substack](https://gleanai.substack.com).
 
 ---
 
@@ -55,14 +55,20 @@ python agent.py
 
 ### 5. Open the dashboard
 
-Navigate to http://localhost:5000 on the Pi, or http://YOUR-PI-IP:5000 from any device on the same network. Find your Pi's IP by running: hostname -I
+Navigate to http://localhost:5000 on the Pi, or http://YOUR-PI-IP:5000 from any device on the same network. 
+Find your Pi's IP by running: 
+```
+hostname -I
+```
 
 ### 6. Automate with cron
 
 crontab -e
 
 Add this line to run every morning at 7am:
+```
 0 7 * * * /home/pi/arxiv-agent/venv/bin/python3 /home/pi/arxiv-agent/agent.py >> /home/pi/arxiv-agent/digest.log 2>&1
+```
 
 ---
 
@@ -96,4 +102,7 @@ The result is a hybrid architecture: scheduling, fetching, and serving all run o
 
 ---
 
-Personal project. All views my own, independent of my employer.
+This is a personal project. All views are my own, independent of my employer.
+
+
+
